@@ -1,0 +1,244 @@
+/*轮播图*/
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.banner>ul:nth-child(1){
+    width: 1000%;
+    position: relative;
+    left: -100%;
+}
+.banner>ul:nth-child(1) li{
+    width: 10%;
+    float: left;
+}
+.banner>ul:nth-child(1) li a{
+    width: 100%;
+    display: block;
+}
+.banner>ul:nth-child(1) li a img{
+    width: 100%;
+}
+/*轮播图原点*/
+.banner>ul:nth-child(2){
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 10px;
+}
+.banner>ul:nth-child(2) li{
+    width: 6px;
+    height: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 3px;
+    float: left;
+    margin-right: 6px;
+}
+
+.kb{
+    margin: 10px 5px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #fff;
+    line-height: 30px;
+    overflow: hidden;
+    perspective: 200px;
+    position: relative;
+}
+.kb a{
+    display: inline-block;
+}
+.kb a img{
+    height: 16px;
+    padding-left: 10px;
+    margin-top: 8px;
+}
+.kb_ul{
+    position: absolute;
+    padding-left: 85px;
+    top:0;
+    animation: rot 4s infinite;
+}
+@keyframes rot {
+    0%{
+        transition:all .5s;
+        transform: translate3d(0,0,0);
+    }
+    33.33%{
+        transition:all .5s;
+        transform: translate3d(0,0,0);
+    }
+    66.66%{
+        transition:all .5s;
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transition:all .5s;
+        transform: translate3d(0,-29px,0);
+    }
+
+}
+.kb_ul span{
+    padding: 0 10px;
+    color: red;
+}
+
+.nav{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.nav a{
+    float: left;
+    background-color: white;
+    display: block;
+    width: 25%;
+    height: 68px;
+}
+.nav img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0px auto;
+}
+.nav p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.product{
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.box{
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 1px #e0e0e0;
+    margin-bottom: 10px;
+}
+.box_title{
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 32px;
+}
+.first{
+    border: none;
+}
+.box1_pic{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url("images/seckill-icon.png");
+    background-size: 20px 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+}
+.times{
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.times span{
+    float: left;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    margin-right: 3px;
+}
+.ti{
+    background-color: #333;
+    color: #fff;
+}
+.box{
+    overflow: hidden;
+}
+.box_title p{
+    display: inline-block;
+    float: left;
+
+    margin-left: 10px;
+    color: red;
+}
+.box_title a{
+    display: inline-block;
+    float: right;
+    padding-right: 10px;
+}
+.box_content{
+    width: 300%;
+    padding: 10px 0;
+    position: relative;
+}
+.box_content>div{
+    width: 11.11%;
+    float: left;
+}
+.box_content>div>a{
+    width: 100%;
+    display: block;
+}
+.box_content>div:nth-child(2)>a{
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.box_content>div>a>img{
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+.box_content p{
+    text-align: center;
+    padding: 2px;
+}
+.r{
+    color: red;
+}
+.box h3{
+    font-weight: normal;
+    padding-left: 20px;
+    position: relative;
+}
+.box h3::before{
+    content: "";
+    width: 3px;
+    height: 12px;
+    background-color: darkred;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.box_con1 a{
+    width: 50%;
+    display: block;
+    float: left;
+}
+.box_con1 a img,.box_con2 a img{
+    width: 100%;
+    display: block;
+}
+.box_con1>a:nth-child(1){
+    border-right: 1px solid #e0e0e0;
+}
+.box_con1>a:nth-child(2),.box_con2>a:nth-child(2){
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.box_con2 a{
+    width: 50%;
+    display: block;
+    float: right;
+}
+.box_con2>a:nth-child(1){
+    border-left: 1px solid #e0e0e0;
+}
